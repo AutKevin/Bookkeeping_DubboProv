@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 扫描service层注解 -->
+    <context:component-scan base-package="com.autumn.service"/>
+
+    <!--<bean id="getHttpInfoServicefromdubbo" class="com.autumn.service.GetHttpInfoService"></bean>
+    &lt;!&ndash; 使用dubbo发布服务 &ndash;&gt;
+    &lt;!&ndash; 提供方应用信息，用于计算依赖关系 &ndash;&gt;
+    <dubbo:application name="bookkeeping_androidweb" />
+    <dubbo:registry protocol="zookeeper" address="www.52zt.online:2181" />
+    &lt;!&ndash; 用dubbo协议在20880端口暴露服务 &ndash;&gt;
+    <dubbo:protocol name="dubbo" port="20880" />
+    &lt;!&ndash; 声明需要暴露的服务接口,service表示提供服务,reference表示引用 &ndash;&gt;
+    &lt;!&ndash; timeout="600000"表示超时时间为十分钟 ,默认为一秒,默认请求失败时请求三次&ndash;&gt;
+    <dubbo:service interface="com.autumn.serviceinf.GetHttpInfoServiceInf" ref="getHttpInfoServicefromdubbo" timeout="600000"/>-->
+
+</beans>
